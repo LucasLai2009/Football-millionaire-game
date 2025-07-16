@@ -110,7 +110,7 @@ export const RARE_PLAYERS: Card[] = [
     { id: 'p-rar-106', type: CardType.Player, name: 'Ismaël Bennacer', description: 'An energetic and technical Algerian midfielder for AC Milan.', rarity: 'Rare', position: 'Midfielder', nationality: 'Algeria', age: 27 },
     { id: 'p-rar-107', type: CardType.Player, name: 'Pierre Kalulu', description: 'A versatile and speedy French defender for AC Milan.', rarity: 'Rare', position: 'Defender', nationality: 'France', age: 25 },
     { id: 'p-rar-108', type: CardType.Player, name: 'Bremer', description: 'A physically dominant Brazilian centre-back for Juventus.', rarity: 'Rare', position: 'Defender', nationality: 'Brazil', age: 28 },
-    { id: 'p-rar-109', type: CardType.Player, name: 'Danilo', description: 'A versatile and experienced Brazilian defender for Juventus.', rarity: 'Rare', position: 'Defender', nationality: 'Brazil', age: 34 },
+    { id: 'p-rar-109', type: CardType.Player, name: 'Danilo', description: 'A versatile and experienced Brazilian defender for Flamengo, who played for Juventus.', rarity: 'Rare', position: 'Defender', nationality: 'Brazil', age: 34 },
     { id: 'p-rar-110', type: CardType.Player, name: 'Adrien Rabiot', description: 'An elegant French midfielder for Juventus.', rarity: 'Rare', position: 'Midfielder', nationality: 'France', age: 30 },
     { id: 'p-rar-111', type: CardType.Player, name: 'Roger Ibañez', description: 'An aggressive Brazilian defender.', rarity: 'Rare', position: 'Defender', nationality: 'Brazil', age: 28 },
     { id: 'p-rar-112', type: CardType.Player, name: 'Gianluca Mancini', description: 'A tough-tackling Italian defender for AS Roma.', rarity: 'Rare', position: 'Defender', nationality: 'Italy', age: 30 },
