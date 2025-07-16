@@ -73,7 +73,7 @@ const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onStartGame, onGoToShop, 
                     Please note: This game is still in the making. Some information may be false or outdated, and new features will be added and adjusted.
                 </p>
                 <p className="pt-2 text-slate-500">
-                    For inquiries or to report bug issues, please contact: <a href="mailto:playfootballmillionaire@gmail.com" className="text-amber-400 hover:underline">playfootballmillionaire@gmail.com</a>
+                    For inquiries, please contact: <a href="mailto:playfootballmillionaire@gmail.com" className="text-amber-400 hover:underline">playfootballmillionaire@gmail.com</a>
                 </p>
             </div>
         </div>
