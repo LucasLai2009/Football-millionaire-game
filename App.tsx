@@ -80,15 +80,9 @@ const App: React.FC = () => {
     const [detailedCardInfo, setDetailedCardInfo] = useState<{ card: Card; isOwned: boolean } | null>(null);
     const [isResetConfirmOpen, setIsResetConfirmOpen] = useState(false);
 
-<<<<<<< HEAD
     const [privacyConsent, setPrivacyConsent] = useState<'all' | 'essential' | null>(() => {
         const consent = localStorage.getItem(PRIVACY_CONSENT_KEY);
         return consent as 'all' | 'essential' | null;
-=======
-    const [showPrivacyBanner, setShowPrivacyBanner] = useState<boolean>(() => {
-        const consent = localStorage.getItem(PRIVACY_CONSENT_KEY);
-        return !consent; // Show banner if consent is not given
->>>>>>> origin/master
     });
 
     // --- State for Draft Mode ---
@@ -115,7 +109,6 @@ const App: React.FC = () => {
         window.location.reload();
     }, []);
 
-<<<<<<< HEAD
     const handleAcceptAllPrivacy = useCallback(() => {
         localStorage.setItem(PRIVACY_CONSENT_KEY, 'all');
         setPrivacyConsent('all');
@@ -124,11 +117,6 @@ const App: React.FC = () => {
     const handleAcceptEssentialPrivacy = useCallback(() => {
         localStorage.setItem(PRIVACY_CONSENT_KEY, 'essential');
         setPrivacyConsent('essential');
-=======
-    const handleAcceptPrivacy = useCallback(() => {
-        localStorage.setItem(PRIVACY_CONSENT_KEY, 'true');
-        setShowPrivacyBanner(false);
->>>>>>> origin/master
     }, []);
 
     const startGame = () => {
@@ -405,17 +393,10 @@ const App: React.FC = () => {
                     </div>
                 </div>
             )}
-<<<<<<< HEAD
             {!privacyConsent && <PrivacyConsentBanner onAcceptAll={handleAcceptAllPrivacy} onAcceptEssential={handleAcceptEssentialPrivacy} onShowPrivacyPolicy={goToPrivacyPolicy} />}
-=======
-            {showPrivacyBanner && <PrivacyConsentBanner onAccept={handleAcceptPrivacy} onShowPrivacyPolicy={goToPrivacyPolicy} />}
->>>>>>> origin/master
         </main>
     );
 };
 
 export default App;
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/master
