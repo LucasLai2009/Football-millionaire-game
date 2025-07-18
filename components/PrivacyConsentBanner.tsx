@@ -1,5 +1,4 @@
 
-
 import React from 'react';
 
 interface PrivacyConsentBannerProps {
@@ -30,3 +29,4 @@ const PrivacyConsentBanner: React.FC<PrivacyConsentBannerProps> = ({ onAccept, o
 };
 
 export default PrivacyConsentBanner;
+

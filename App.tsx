@@ -1,7 +1,4 @@
 
-
-
-
 import React, { useState, useCallback, useEffect } from 'react';
 import { GameStatus, Lifeline, Question, Card, Collection, DraftedPlayer } from './types';
 import WelcomeScreen from './components/WelcomeScreen';
@@ -397,3 +394,4 @@ const App: React.FC = () => {
 };
 
 export default App;
+

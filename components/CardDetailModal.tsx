@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardType } from '../types';
 import { Logo } from './icons';
@@ -118,3 +119,4 @@ export default function CardDetailModal({ card, onClose, isOwned }: CardDetailMo
         </div>
     );
 }
+

@@ -23,7 +23,6 @@ const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onStartGame, onGoToShop, 
             </h1>
             <p className="text-lg md:text-xl text-slate-300 max-w-2xl mb-8">
                 Test your football knowledge, win virtual cash to unlock cards, and discover facts about your favorite players, managers, and countries!
-            </p>
 
             <div className="w-full flex flex-col items-center gap-5 mb-12">
                 <button
@@ -87,3 +86,4 @@ const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onStartGame, onGoToShop, 
 };
 
 export default WelcomeScreen;
+
