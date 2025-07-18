@@ -119,3 +119,4 @@ export default function CardDetailModal({ card, onClose, isOwned }: CardDetailMo
         </div>
     );
 }
+

@@ -27,7 +27,6 @@ export enum Lifeline {
 // Types for Reward System
 export enum CardType {
     Player = 'Player',
-    Team = 'Team',
     Country = 'Country',
     Manager = 'Manager',
 }

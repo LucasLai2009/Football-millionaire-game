@@ -86,9 +86,8 @@ const CollectionScreen: React.FC<CollectionScreenProps> = ({ allCards, collectio
         });
 
     }, [uniqueDisplayCards, collection, searchTerm, typeFilter, rarityFilter, showOwnedOnly, sortBy, acquiredOrder]);
-        
-    const typeFilters: ('All' | CardType)[] = ['All', CardType.Player, CardType.Team, CardType.Country, CardType.Manager];
-    const rarityFilters: ('All' | Card['rarity'])[] = ['All', 'Common', 'Rare', 'Epic', 'Legendary'];
+
+    const typeFilters: ('All' | CardType)[] = ['All', CardType.Player, CardType.Country, CardType.Manager];
 
     return (
         <div className="w-full relative p-4">
@@ -199,3 +198,4 @@ const CollectionScreen: React.FC<CollectionScreenProps> = ({ allCards, collectio
 };
 
 export default CollectionScreen;
+
