@@ -148,9 +148,9 @@ const CollectionScreen: React.FC<CollectionScreenProps> = ({ allCards, collectio
                         </div>
                     </div>
                     <div className="flex flex-col md:flex-row items-center justify-center gap-4 w-full">
-                        {/* Rarity Filters */}
+                        {/* Rarity Filter */}
                         <div className="flex flex-wrap justify-center gap-2 p-1.5 bg-slate-800 rounded-full">
-                             {rarityFilters.map(r => (
+                             {rarityFilter.map(r => (
                                 <button
                                     key={r}
                                     onClick={() => setRarityFilter(r)}
