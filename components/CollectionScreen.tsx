@@ -1,4 +1,3 @@
-
 import React, { useState, useMemo } from 'react';
 import { Card, CardType, Collection } from '../types';
 import { CardComponent } from './CardComponent';
@@ -86,8 +85,9 @@ const CollectionScreen: React.FC<CollectionScreenProps> = ({ allCards, collectio
         });
 
     }, [uniqueDisplayCards, collection, searchTerm, typeFilter, rarityFilter, showOwnedOnly, sortBy, acquiredOrder]);
-
+        
     const typeFilters: ('All' | CardType)[] = ['All', CardType.Player, CardType.Country, CardType.Manager];
+    const rarityFilters: ('All' | Card['rarity'])[] = ['All', 'Common', 'Rare', 'Epic', 'Legendary'];
 
     return (
         <div className="w-full relative p-4">
@@ -148,9 +148,9 @@ const CollectionScreen: React.FC<CollectionScreenProps> = ({ allCards, collectio
                         </div>
                     </div>
                     <div className="flex flex-col md:flex-row items-center justify-center gap-4 w-full">
-                        {/* Rarity Filter */}
+                        {/* Rarity Filters */}
                         <div className="flex flex-wrap justify-center gap-2 p-1.5 bg-slate-800 rounded-full">
-                             {rarityFilter.map(r => (
+                             {rarityFilters.map(r => (
                                 <button
                                     key={r}
                                     onClick={() => setRarityFilter(r)}
@@ -198,4 +198,3 @@ const CollectionScreen: React.FC<CollectionScreenProps> = ({ allCards, collectio
 };
 
 export default CollectionScreen;
-
