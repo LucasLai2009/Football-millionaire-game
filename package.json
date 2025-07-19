@@ -2,7 +2,7 @@
   "name": "football-millionaire-game",
   "private": true,
   "version": "1.0.0",
-  "homepage": "https://LucasLai2009.github.io/Football-millionaire-game",
+  "homepage": "https://playfootballmillionaire.com",
   "description": "A 'Who Wants to be a Millionaire' style quiz game where all questions are about football. Test your knowledge to win virtual cash, unlock player cards, and discover thousands of facts about the beautiful game!",
   "scripts": {
     "dev": "vite",
