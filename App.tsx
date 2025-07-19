@@ -17,6 +17,8 @@ import { QUESTION_DATABASE } from './data/question-database';
 import PrivacyConsentBanner from './components/PrivacyConsentBanner';
 import PrivacyPolicyScreen from './components/PrivacyPolicyScreen';
 import HowToPlayScreen from './components/HowToPlayScreen';
+import AboutUsScreen from './components/AboutUsScreen';
+import TermsOfServiceScreen from './components/TermsOfServiceScreen';
 
 // Migration logic to ensure progress is saved across updates
 const migrateV3ToStable = () => {
@@ -202,6 +204,8 @@ const App: React.FC = () => {
     const goToModes = () => setGameStatus(GameStatus.Modes);
     const goToPrivacyPolicy = () => setGameStatus(GameStatus.PrivacyPolicy);
     const goToHowToPlay = () => setGameStatus(GameStatus.HowToPlay);
+    const goToAboutUs = () => setGameStatus(GameStatus.AboutUs);
+    const goToTermsOfService = () => setGameStatus(GameStatus.TermsOfService);
     const backToMenu = () => {
         setDraftedTeam([]); // Clear draft when going back to menu
         setGameStatus(GameStatus.Welcome);
@@ -338,6 +342,10 @@ const App: React.FC = () => {
                 return <PrivacyPolicyScreen onBack={backToMenu} />;
             case GameStatus.HowToPlay:
                 return <HowToPlayScreen onBack={backToMenu} />;
+            case GameStatus.AboutUs:
+                return <AboutUsScreen onBack={backToMenu} />;
+            case GameStatus.TermsOfService:
+                return <TermsOfServiceScreen onBack={backToMenu} />;
             case GameStatus.Welcome:
             default:
                 return (
@@ -350,6 +358,8 @@ const App: React.FC = () => {
                         onOpenResetConfirm={() => setIsResetConfirmOpen(true)}
                         onGoToPrivacyPolicy={goToPrivacyPolicy}
                         onGoToHowToPlay={goToHowToPlay}
+                        onGoToAboutUs={goToAboutUs}
+                        onGoToTermsOfService={goToTermsOfService}
                     />
 
                 );
@@ -399,4 +409,3 @@ const App: React.FC = () => {
 };
 
 export default App;
-

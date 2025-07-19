@@ -19,6 +19,8 @@ export enum GameStatus {
     DraftQuiz = 'draft_quiz',
     PrivacyPolicy = 'privacy_policy',
     HowToPlay = 'how_to_play',
+    AboutUs = 'about_us',
+    TermsOfService = 'terms_of_service',
 }
 
 export enum Lifeline {

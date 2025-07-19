@@ -12,9 +12,11 @@ interface WelcomeScreenProps {
     onOpenResetConfirm: () => void;
     onGoToPrivacyPolicy: () => void;
     onGoToHowToPlay: () => void;
+    onGoToAboutUs: () => void;
+    onGoToTermsOfService: () => void;
 }
 
-const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onStartGame, onGoToShop, onGoToCollection, onGoToDuplicates, onGoToModes, onOpenResetConfirm, onGoToPrivacyPolicy, onGoToHowToPlay }) => {
+const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onStartGame, onGoToShop, onGoToCollection, onGoToDuplicates, onGoToModes, onOpenResetConfirm, onGoToPrivacyPolicy, onGoToHowToPlay, onGoToAboutUs, onGoToTermsOfService }) => {
     return (
         <div className="flex flex-col items-center justify-center p-4 sm:p-8 z-10 animate-fade-in w-full max-w-3xl text-center">
             <Logo className="w-48 h-48 mb-6" />
@@ -58,11 +60,15 @@ const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onStartGame, onGoToShop, 
             </div>
             
             <div className="mt-8 text-xs text-slate-600 max-w-xl mx-auto space-y-2">
-                 <div className="flex justify-center items-center gap-4 text-sm text-slate-400 mb-4">
+                 <div className="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 text-sm text-slate-400 mb-4">
                     <button onClick={onGoToHowToPlay} className="hover:text-amber-300 transition-colors">How to Play</button>
-                    <span className="text-slate-600">|</span>
+                    <span className="text-slate-600 hidden sm:inline">|</span>
+                    <button onClick={onGoToAboutUs} className="hover:text-amber-300 transition-colors">About Us</button>
+                    <span className="text-slate-600 hidden sm:inline">|</span>
+                    <button onClick={onGoToTermsOfService} className="hover:text-amber-300 transition-colors">Terms of Service</button>
+                    <span className="text-slate-600 hidden sm:inline">|</span>
                     <button onClick={onGoToPrivacyPolicy} className="hover:text-amber-300 transition-colors">Privacy Policy</button>
-                     <span className="text-slate-600">|</span>
+                     <span className="text-slate-600 hidden sm:inline">|</span>
                     <button
                         onClick={onOpenResetConfirm}
                         className="flex items-center gap-2 text-slate-500 hover:text-red-500 transition-colors"
