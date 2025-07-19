@@ -58,7 +58,7 @@ export const RARE_PLAYERS: Card[] = [
     { id: 'p-rar-054', type: CardType.Player, name: 'Darwin Núñez', description: 'An agent of chaos, a powerful striker for Liverpool.', rarity: 'Rare', position: 'Forward', nationality: 'Uruguay', age: 26 },
     { id: 'p-rar-055', type: CardType.Player, name: 'Alexander Isak', description: 'A tall, skilful Swedish striker for Newcastle United.', rarity: 'Rare', position: 'Forward', nationality: 'Sweden', age: 25 },
     { id: 'p-rar-056', type: CardType.Player, name: 'Moussa Diaby', description: 'A French winger with blistering pace.', rarity: 'Rare', position: 'Forward', nationality: 'France', age: 26 },
-    { id: 'p-rar-057', type: CardType.Player, name: 'Patrik Schick', description: 'Czech striker known for scoring a goal from the halfway line in Euro 2020.', rarity: 'Rare', position: 'Forward', nationality: 'Czechia', age: 29 },
+    { id: 'p-rar-057', type: CardType.Player, name: 'Patrik Schick', description: 'Czech striker known for scoring a goal from the halfway line in Euro 2020.', rarity: 'Rare', position: 'Forward', nationality: 'Czech Republic', age: 29 },
     { id: 'p-rar-058', type: CardType.Player, name: 'Sergej Milinković-Savić', description: 'A tall, powerful, and skillful Serbian midfielder.', rarity: 'Rare', position: 'Midfielder', nationality: 'Serbia', age: 30 },
     { id: 'p-rar-059', type: CardType.Player, name: 'Memphis Depay', description: 'A skillful and confident Dutch forward.', rarity: 'Rare', position: 'Forward', nationality: 'Netherlands', age: 31 },
     { id: 'p-rar-060', type: CardType.Player, name: 'Yannick Carrasco', description: 'A tricky Belgian winger known for his dribbling.', rarity: 'Rare', position: 'Forward', nationality: 'Belgium', age: 31 },
@@ -246,7 +246,7 @@ export const RARE_PLAYERS: Card[] = [
     { id: 'p-rar-242', type: CardType.Player, name: 'Leandro Trossard', description: 'A versatile Belgian forward known for his technical skill and work rate at Arsenal.', rarity: 'Rare', position: 'Forward', nationality: 'Belgium', age: 31 },
     { id: 'p-rar-243', type: CardType.Player, name: 'Gianluigi Donnarumma', description: 'Italian goalkeeper, Euro 2020 hero, and PSG\'s shot-stopper.', rarity: 'Rare', position: 'Goalkeeper', nationality: 'Italy', age: 26 },
     { id: 'p-rar-244', type: CardType.Player, name: 'Rasmus Højlund', description: 'Danish striker, Manchester United\'s rising star with explosive potential.', rarity: 'Rare', position: 'Forward', nationality: 'Denmark', age: 22 },
-    { id: 'p-rar-245', type: CardType.Player, name: 'Evan Ferguson', description: 'Irish sensation, Brighton\'s young goal machine with a bright future.', rarity: 'Rare', position: 'Forward', nationality: 'Ireland', age: 20 },
+    { id: 'p-rar-245', type: CardType.Player, name: 'Evan Ferguson', description: 'Irish sensation, Brighton\'s young goal machine with a bright future.', rarity: 'Rare', position: 'Forward', nationality: 'Republic of Ireland', age: 20 },
     { id: 'p-rar-246', type: CardType.Player, name: 'Nico Williams', description: 'Spanish winger, Athletic Bilbao\'s electrifying talent.', rarity: 'Rare', position: 'Forward', nationality: 'Spain', age: 23 },
     { id: 'p-rar-247', type: CardType.Player, name: 'António Silva', description: 'Portuguese defender, Benfica\'s rock and future elite CB.', rarity: 'Rare', position: 'Defender', nationality: 'Portugal', age: 21 },
 ];
